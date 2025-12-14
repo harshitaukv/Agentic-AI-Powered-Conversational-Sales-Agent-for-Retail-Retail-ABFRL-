@@ -1,8 +1,6 @@
 
 #  Agentic AI-Powered Omnichannel Conversational Sales Agent
 
-### *(ABFRL Retail – Techathon / Hackathon Project)*
-
 An **end-to-end Agentic AI system** that delivers a **unified, intelligent, and personalized retail experience** across **Web, Mobile, and WhatsApp** channels.
 The platform uses **LangChain + LLMs + modular worker agents** to orchestrate sales, inventory, payments, and post-purchase support for ABFRL brands.
 
