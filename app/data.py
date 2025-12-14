@@ -1,4 +1,4 @@
-'''
+
 # Mock Product Catalog (ABFRL)
 PRODUCTS = [
     {
@@ -54,4 +54,4 @@ ORDERS = {
         "payment_status": "Paid"
     }
 }
-'''
+
