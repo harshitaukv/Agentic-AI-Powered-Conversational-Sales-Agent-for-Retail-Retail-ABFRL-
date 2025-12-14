@@ -17,5 +17,6 @@ def route_intent(user_input: str):
         return payment()
     if intent == "post_purchase":
         return post_purchase()
-
+    if intent == "loyalty":
+    return loyalty_offers()
     return "How can I help you today? 😊"
