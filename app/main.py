@@ -1,11 +1,9 @@
-from fastapi import FastAPI
-from app.orchestrator import route_intent
+from app.models import ChatRequest, ChatResponse
 
-app = FastAPI(title="ABFRL Agentic AI Sales Agent")
+@app.post("/chat", response_model=ChatResponse)
+def chat(req: ChatRequest):
+    reply = route_intent(req.message)
+    return {"response": reply}
 
-@app.post("/chat")
-def chat(message: str):
-    response = route_intent(message)
-    return {"response": response}
 #Run using
 #uvicorn app.main:app --reload
