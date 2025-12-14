@@ -80,7 +80,8 @@ Agentic-AI-Powered-Coversational-Sales-Agent-for-Retail-ABFRL-/
 
 ##  Tech Stack
 
-* **Backend**: Python, FastAPI
+* **Backend**: Python, FastAPI , PHP
+* **Frontend**: HTML, CSS, JS
 * **AI / NLP**: OpenAI, LangChain
 * **Memory**: LangChain ConversationBufferMemory
 * **Messaging**: Twilio WhatsApp API
