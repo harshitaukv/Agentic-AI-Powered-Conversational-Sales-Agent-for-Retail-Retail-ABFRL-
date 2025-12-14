@@ -1,15 +1,10 @@
-from app.rag import search_products
+from app.vector_store import search_products
 
 def recommend():
-    products = search_products("shirt")
+    results = search_products("cotton t-shirt")
 
-    if not products:
-        return "No matching products found."
-
-    p = products[0]
     return (
-        f"👕 *Recommended Product*\n"
-        f"{p['brand']} {p['name']}\n"
-        f"Category: {p['category']}\n"
-        f"Price: ₹{p['price']}"
+        "👕 *AI Recommended Product*\n"
+        + results[0]
+        + "\nReason: Matches your preferences and current trends."
     )
