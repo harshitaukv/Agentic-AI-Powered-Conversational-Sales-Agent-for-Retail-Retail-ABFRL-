@@ -1,0 +1,119 @@
+*{
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  margin:0;
+  background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+  min-height:100vh;
+}
+
+.navbar{
+  background:#111;
+  padding:15px 30px;
+  color:#fff;
+  font-size:20px;
+  font-weight:600;
+}
+
+.app{
+  max-width:1100px;
+  margin:30px auto;
+  padding:20px;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:#fff;
+  border-radius:18px;
+  padding:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.25);
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+}
+
+.card h3{
+  margin-top:0;
+  color:#1a73e8;
+}
+
+.status{
+  padding:8px 14px;
+  display:inline-block;
+  border-radius:20px;
+  background:#e8f5e9;
+  color:#2e7d32;
+  font-weight:600;
+  font-size:14px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 18px;
+  margin-top:10px;
+  background:#1a73e8;
+  color:#fff;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:600;
+  text-align:center;
+}
+
+.btn.secondary{background:#1fa463;}
+.btn.danger{background:#e53935;}
+.btn.gray{background:#777;}
+
+.progress li{
+  list-style:none;
+  margin:10px 0;
+  font-size:14px;
+}
+
+.chatbox{
+  background:#f4f7ff;
+  border-radius:12px;
+  padding:15px;
+  height:220px;
+  overflow-y:auto;
+}
+
+.bot,.user{
+  padding:10px;
+  border-radius:14px;
+  margin-bottom:10px;
+  max-width:75%;
+}
+
+.bot{
+  background:#1a73e8;
+  color:#fff;
+}
+
+.user{
+  background:#1fa463;
+  color:#fff;
+  margin-left:auto;
+}
+
+input{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  border-radius:10px;
+  border:1px solid #ccc;
+}
+
+.feedback span{
+  font-size:32px;
+  cursor:pointer;
+  margin-right:15px;
+}
