@@ -1,7 +1,15 @@
+from app.rag import search_products
+
 def recommend():
+    products = search_products("shirt")
+
+    if not products:
+        return "No matching products found."
+
+    p = products[0]
     return (
-        "👕 *Recommended for you*\n"
-        "Allen Solly Slim Fit Cotton T-Shirt\n"
-        "Price: ₹1299\n"
-        "Reason: Based on your style and past purchases."
+        f"👕 *Recommended Product*\n"
+        f"{p['brand']} {p['name']}\n"
+        f"Category: {p['category']}\n"
+        f"Price: ₹{p['price']}"
     )
