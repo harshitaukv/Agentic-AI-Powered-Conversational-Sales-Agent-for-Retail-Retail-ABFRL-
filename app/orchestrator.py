@@ -20,3 +20,7 @@ def route_intent(user_input: str):
     if intent == "loyalty":
     return loyalty_offers()
     return "How can I help you today? 😊"
+    from app.translator import translate
+    response = process_logic(user_input)
+    return translate(response, lang)
+
