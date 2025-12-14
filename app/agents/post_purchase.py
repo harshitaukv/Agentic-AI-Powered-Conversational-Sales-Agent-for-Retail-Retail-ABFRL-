@@ -1,8 +1,10 @@
+from app.agents.returns import handle_return
+
 def post_purchase():
     return (
-        "🚚 *Order Status*\n"
-        "Order: ABFRL-ORD-1029\n"
-        "Status: Out for delivery\n"
-        "Options: Track | Return | Contact Support"
+        "🚚 Order Delivered\n"
+        "Options:\n"
+        "1. Track Order\n"
+        "2. Request Return\n\n"
+        f"{handle_return()}"
     )
-
