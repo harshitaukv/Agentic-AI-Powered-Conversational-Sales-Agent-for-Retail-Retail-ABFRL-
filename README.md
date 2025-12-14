@@ -94,9 +94,9 @@ Agentic-AI-Powered-Coversational-Sales-Agent-for-Retail-ABFRL-/
 Create a `.env` file in the root directory:
 
 ```env
-OPENAI_API_KEY=your_openai_api_key
-TWILIO_ACCOUNT_SID=your_twilio_sid
-TWILIO_AUTH_TOKEN=your_twilio_auth_token
+OPENAI_API_KEY=openai_api_key
+TWILIO_ACCOUNT_SID=twilio_sid
+TWILIO_AUTH_TOKEN=twilio_auth_token
 TWILIO_WHATSAPP_NUMBER=whatsapp:+14155238886
 ```
 
